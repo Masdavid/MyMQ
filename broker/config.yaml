@@ -1,0 +1,18 @@
+proto: diy
+tcp:
+  ip: 0.0.0.0
+  port: 9833
+  nodelay: false
+  readBufSize: 196608
+  writeBufSize: 196608
+queue:
+  shardSize: 8192
+  maxMessagesInRam: 2097152
+db:
+  defaultPath: db
+  engine: badger
+manager:
+  defaultName: dw
+connection:
+  channelsMax: 4096
+  frameMaxSize: 65536
